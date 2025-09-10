@@ -6,14 +6,14 @@ public class Car { // Blueprint or design of cars.
     // Any class is a custom reference data type.
     
     // 1. Data Members -> named as Field/ Attribute Represented as normal variables
-    String color;
-    int speed;
-    float width;
-    float length;
-    String brand;
-    String yearOfConstructing;
-    String currentMovingDirection = "forward"; // left, right, forward or backward
-    boolean isOn;
+    private String color;
+    private int speed;
+    private float width;
+    private  float length;
+    private String brand;
+    private  String yearOfConstructing;
+    private  String currentMovingDirection = "forward"; // left, right, forward or backward
+    private  boolean isOn;
     // float[] dimension;
     
     // Object Creation/Instantiation performed using Constructors
@@ -123,4 +123,81 @@ public class Car { // Blueprint or design of cars.
         // speed = speed - decrement;
     }
     
+    
+    // Penitents of Encapsulation? Why we use Encapsulation's Getters/Setters?
+    // 1. Data hiding (using private access modifiers) increase the security.
+    // 2. Layer of control over the data:
+    // Read-only (by providing getters only)
+    // Write-only (by providing setters only)
+    // Validation: Conditional Setting or Getting
+    // Transformation (ex: password encryption/description)
+    // 3. Increase Flexibility & Modularity & Reusability & Maintainability
+    
+    // Setter: assign value to the data
+    // Getter: retrieve the data
+    public String getBrand() {
+        return brand;
+    }
+    
+    public void setBrand(String brand) {
+        if (this.brand == null || this.brand.isEmpty()) // Validation: restrict the reassign of value to the brand
+            this.brand = brand;
+        else System.out.println("You can't reassign the brand attribute");
+    }
+    
+    public String getColor() {
+        return color;
+    }
+    
+    public void setColor(String color) {
+        this.color = color;
+    }
+    
+    public String getCurrentMovingDirection() {
+        return currentMovingDirection;
+    }
+    
+    public void setCurrentMovingDirection(String currentMovingDirection) {
+        this.currentMovingDirection = currentMovingDirection;
+    }
+    
+    public boolean isOn() {
+        return isOn;
+    }
+    
+    public void setOn(boolean on) {
+        isOn = on;
+    }
+    
+    public float getLength() {
+        return length;
+    }
+    
+    public void setLength(float length) {
+        this.length = length;
+    }
+    
+    public int getSpeed() {
+        return speed;
+    }
+    
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+    
+    public float getWidth() {
+        return width;
+    }
+    
+    public void setWidth(float width) {
+        this.width = width;
+    }
+    
+    public String getYearOfConstructing() {
+        return yearOfConstructing;
+    }
+    
+    public void setYearOfConstructing(String yearOfConstructing) {
+        this.yearOfConstructing = yearOfConstructing;
+    }
 }

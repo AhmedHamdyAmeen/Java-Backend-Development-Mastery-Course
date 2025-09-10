@@ -1,5 +1,7 @@
 package JavaSE;
 
+import JavaSE.Chapter7OOP.Car;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -7,6 +9,7 @@ import java.util.stream.Collectors;
 
 public class Playground {
     int age = 10;
+    // Car myCar = new Car("red",20, 2, 1, "BMW");
     
     public static void main(String[] args) {
         System.out.println("-".repeat(10));
