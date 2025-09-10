@@ -101,26 +101,32 @@ public class Chapter7 {
          -------------------------------------------
         */
         
-        Person person = new Person(22, "Blue", 1.70, "Person", 70);
-        Person father = new Parent(28, "Gray", 1.90, "Mohamed", 85, "Father");
-        Person mother = new Parent(28, "Gray", 1.90, "Monera", 85, "Mother");
-        Person child = new Child(28, "Gray", 1.90, "Ebrahim", 85);
+        // Object Definition
+        Person person = new Person(22, "Blue", 1.70, "Person", 70); // Up-casting
+        Parent father = new Parent(28, "Gray", 1.90, "Mohamed", 85, "Father", "Aggressively");
+        Parent mother = new Parent(28, "Gray", 1.90, "Monera", 85, "Mother", "Calm");
+        Child child = new Child(28, "Gray", 1.90, "Ebrahim", 85, "Friendly");
+        Child child2 = new Child(28, "blue", 1.90, "Nour", 85, "Aggressively");
         
-        
+        // Inherit Getters & Setters
         System.out.println(person.getName());
         System.out.println(father.getName());
         System.out.println(mother.getName());
         System.out.println(child.getName());
         
+        // Inherit Direct Constant Attribute
         int averageFamilyAge = person.AVERAGE_FAMILY_AGE;
         int averageFamilyAge2 = father.AVERAGE_FAMILY_AGE;
         int averageFamilyAge3 = mother.AVERAGE_FAMILY_AGE;
         int averageFamilyAge4 = child.AVERAGE_FAMILY_AGE;
         
+        // Inherit Methods/Behaviors
         person.speak();
         father.speak();
         mother.speak();
         child.speak();
+        child2.speak();
+        
         
     }
 }
