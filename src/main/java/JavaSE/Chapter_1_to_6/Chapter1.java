@@ -1,4 +1,4 @@
-package JavaSE.Chapter1_6;
+package JavaSE.Chapter_1_to_6;
 
 /**
  * Session Topics:

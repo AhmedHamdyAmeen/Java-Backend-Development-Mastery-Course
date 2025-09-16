@@ -1,4 +1,4 @@
-package JavaSE.Chapter7OOP.person;
+package JavaSE.Chapter_7_OOP.person;
 
 public class Child extends Parent implements MotherParent {
     

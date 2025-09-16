@@ -1,11 +1,6 @@
 package JavaSE;
 
-import JavaSE.Chapter7OOP.Car;
-
 import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class Playground {
     int age = 10;

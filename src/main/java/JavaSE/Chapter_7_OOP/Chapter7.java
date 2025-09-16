@@ -1,8 +1,8 @@
-package JavaSE.Chapter7OOP;
+package JavaSE.Chapter_7_OOP;
 
-import JavaSE.Chapter7OOP.person.Child;
-import JavaSE.Chapter7OOP.person.Parent;
-import JavaSE.Chapter7OOP.person.Person;
+import JavaSE.Chapter_7_OOP.person.Child;
+import JavaSE.Chapter_7_OOP.person.Parent;
+import JavaSE.Chapter_7_OOP.person.Person;
 
 public class Chapter7 {
     /**

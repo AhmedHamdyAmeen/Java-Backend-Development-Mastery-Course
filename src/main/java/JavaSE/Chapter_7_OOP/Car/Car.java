@@ -1,6 +1,4 @@
-package JavaSE.Chapter7OOP;
-
-import java.util.Date;
+package JavaSE.Chapter_7_OOP.Car;
 
 public class Car { // Blueprint or design of cars.
     // Any class is a custom reference data type.
