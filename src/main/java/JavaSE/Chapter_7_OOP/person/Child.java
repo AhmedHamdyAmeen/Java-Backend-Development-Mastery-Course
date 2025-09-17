@@ -14,4 +14,9 @@ public class Child extends Parent implements MotherParent {
         // Super keyword allow us to access the parent methods/attributes.
         // int averageFamilyAge = super.AVERAGE_FAMILY_AGE;
     }
+    
+    @Override
+    public void eat() {
+        System.out.println("Child is Eating Now! ");
+    }
 }

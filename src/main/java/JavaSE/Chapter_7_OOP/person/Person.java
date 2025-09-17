@@ -1,6 +1,6 @@
 package JavaSE.Chapter_7_OOP.person;
 
-public class Person {
+public abstract class Person {
     // Data Members
     private String name;
     private int age; // Data of birth used instead
@@ -19,17 +19,21 @@ public class Person {
     }
     
     // Methods:
+    // prototype (method Definition) {implementation/body}
     public void speak() {
         System.out.println("Person Speaking Now!");
     }
+    // Concrete Method: Method with its implementation (body/logic)
+    // Abstract Method: method with prototype (method definition/signature) only without implementation (without body).
+    
+    // Concrete Class: class all its methods are concrete methods (methods with implementation).
+    // Abstract Class: Is a class contains one or more abstract method.
     
     public void move() {
         System.out.println("Person Moving Now!");
     }
     
-    public void eat() {
-        System.out.println("Person Eating Now!");
-    }
+    public abstract void eat(); // Abstract Method -> Method Definition Only
     
     public void work() {
         System.out.println("Person Working Now!");

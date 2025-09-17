@@ -1,10 +1,6 @@
-package JavaSE.Chapter_7_OOP;
+package JavaSE.Chapter_7_OOP.person;
 
-import JavaSE.Chapter_7_OOP.person.Child;
-import JavaSE.Chapter_7_OOP.person.Parent;
-import JavaSE.Chapter_7_OOP.person.Person;
-
-public class Chapter7 {
+public class Main {
     /**
      * Programming Paradigms
      * - OOP Class & Objects
@@ -102,30 +98,40 @@ public class Chapter7 {
         */
         
         // Object Definition
-        Person person = new Person(22, "Blue", 1.70, "Person", 70); // Up-casting
-        Parent father = new Parent(28, "Gray", 1.90, "Mohamed", 85, "Father", "Aggressively");
+        // Person person = new Person(22, "Blue", 1.70, "Person", 70); //
+        Parent father = new Parent(28, "Gray", 1.90, "Mohamed", 85, "Father", "Aggressively"); // Up-casting
         Parent mother = new Parent(28, "Gray", 1.90, "Monera", 85, "Mother", "Calm");
         Child child = new Child(28, "Gray", 1.90, "Ebrahim", 85, "Friendly");
         Child child2 = new Child(28, "blue", 1.90, "Nour", 85, "Aggressively");
         
         // Inherit Getters & Setters
-        System.out.println(person.getName());
+//        System.out.println(person.getName());
         System.out.println(father.getName());
         System.out.println(mother.getName());
         System.out.println(child.getName());
         
         // Inherit Direct Constant Attribute
-        int averageFamilyAge = person.AVERAGE_FAMILY_AGE;
+//        int averageFamilyAge = person.AVERAGE_FAMILY_AGE;
         int averageFamilyAge2 = father.AVERAGE_FAMILY_AGE;
         int averageFamilyAge3 = mother.AVERAGE_FAMILY_AGE;
         int averageFamilyAge4 = child.AVERAGE_FAMILY_AGE;
         
         // Inherit Methods/Behaviors
-        person.speak();
+//        person.speak();
         father.speak();
         mother.speak();
         child.speak();
         child2.speak();
+        
+        father.eat();
+        mother.eat();
+        child.eat();
+        
+        
+        int age; // variable definition
+        age = 66; // assigning value for the predefined variable.
+        
+        int age2 = 6; // defining and initializing at the same time.
         
         
     }

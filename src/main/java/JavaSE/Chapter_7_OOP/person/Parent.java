@@ -20,6 +20,11 @@ public class Parent extends Person {
         System.out.println(this.parentType + " Speaking Now! " + this.speakingTone);
     }
     
+    @Override
+    public void eat() {
+        System.out.println(this.parentType + " Eating Now! ");
+    }
+    
     // Inheritance: it is mechanism on oop allow one class to reuse the attributes and methods of another class and establish "is a" relationship.
     // Parent Class (Superclass/base class): existing class which will be inherited later by the child classes.
     // Child Class (Subclass/ derived class): new class which will reuse (inherit) the attributes and the methods of
