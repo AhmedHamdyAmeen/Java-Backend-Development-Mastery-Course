@@ -1,13 +1,16 @@
 package JavaSE.Chapter_7_OOP.animal;
 
 public class Main {
+    
+    // final int age; // Error ❌: Variable age might not have been initialized
+    
     public static void main(String[] args) {
         Animal animal;
         // animal = new Animal(); // Error ❌: Cant instantiate Abstract Class.
         animal = new Cat(); // up-casting (implicit casting)
         
         Cat cat = new Cat();
-        Dog dog = new DogImplementation();
+        DogImplementation dog = new DogImplementation();
         Snake snake = new Snake();
         Kangaroo kangaroo = new Kangaroo();
         Lion lion = new Lion();
@@ -35,6 +38,12 @@ public class Main {
         snake.poop(); // Animal Pooped!
         kangaroo.poop(); // Animal Pooped!
         lion.poop(); // Animal Pooped!
+        
+     
+        dog.reproduction(); // Abstract
+        dog.drinkWater(); // Default
+        AnimalBehavior.showKingdom(); // Static Method
+
         
     }
 }
