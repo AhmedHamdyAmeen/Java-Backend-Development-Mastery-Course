@@ -9,6 +9,9 @@ public abstract class Animal {
     private String gender;
     private Boolean isMature;
     
+    // Static (Non-Instance) Data Members
+    static final int MAX_AGE = 100;
+    
     // Cat is an Animal
     // Dog is an Animal
     // Lion is an Animal
@@ -25,6 +28,7 @@ public abstract class Animal {
         this.isMature = isMature;
         this.name = name;
         this.type = type;
+        System.out.println("Animal Constructor Called!");
     }
     // Methods/Behaviors/Functions
     

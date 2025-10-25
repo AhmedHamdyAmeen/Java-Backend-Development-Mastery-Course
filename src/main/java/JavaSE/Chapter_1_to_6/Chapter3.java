@@ -226,7 +226,7 @@ public class Chapter3 {
         System.out.println(sentences.indexOf("love")); // 2
         System.out.println(sentences.indexOf("love")); // 37
         System.out.println(sentences.indexOf("love", 24));
-        System.out.println(sentences.indexOf("love", 6, 30));
+        // System.out.println(sentences.indexOf("love", 6, 30));
         
         String hello = "Hello World\nI am Ameen\n I love programming!";
         System.out.println(hello.lines()

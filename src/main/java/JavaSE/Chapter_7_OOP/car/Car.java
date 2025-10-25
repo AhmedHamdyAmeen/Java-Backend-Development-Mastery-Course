@@ -40,7 +40,7 @@ public class Car { // Blueprint or design of cars.
         this.currentMovingDirection = "forward";
     }
     
-    Car(float width, float length, int speed) {
+     Car(float width, float length, int speed) {
         this();
         this.width = width;
         this.length = length;

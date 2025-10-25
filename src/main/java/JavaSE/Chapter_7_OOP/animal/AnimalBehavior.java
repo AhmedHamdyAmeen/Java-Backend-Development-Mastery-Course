@@ -1,15 +1,19 @@
 package JavaSE.Chapter_7_OOP.animal;
 
+import java.io.Serializable;
+
 public interface AnimalBehavior {
     // What is the interface?
     // Is one of the Java Components, used to achieve the abstraction and provide contract for the classes.
     // Add Extra Feature.
     
-    // * Final Attributes: any attributes inside an interface treated as final by default.
-    final int MAX_AGE = 100;
+    // * Final Attributes: any attributes inside an interface treated as `public static final` by default.
+    final static int MAX_AGE = 100;
+    String KINGDOM = "Animalia Kingdom";
+    
     // * Default & Static & Abstract Functions/Behaviors/Methods Allowed
     // 1. abstract method:
-    // Note: By default every method inside an interface is treated as "Abstract Method" so we don't have to add the
+    // Note: By default every method inside an interface is treated as "Public Abstract Method" so we don't have to add the
     // `abstract` keyword explicitly.
     abstract void reproduction(); // Abstract method
     
@@ -20,7 +24,7 @@ public interface AnimalBehavior {
     
     // 3. Static Method: Is a method belongs to the Class/Interface itself and can be called directory using the Class/Interface name without needing to create new objects.
     static void showKingdom() {
-        System.out.println("All animals belong to the Kingdom: Animalia 🌍");
+        System.out.printf("All animals belong to the: %s 🌍\n", KINGDOM);
     }
     
     /**
