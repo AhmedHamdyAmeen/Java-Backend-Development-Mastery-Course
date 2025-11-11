@@ -9,12 +9,19 @@ import java.util.Scanner;
 public class PS2javaStdinAndStdout {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-        int c = scan.nextInt();
+        while (scan.hasNext()) {
+            System.out.println(scan.nextInt());
+//            int a = scan.nextInt();
+//            System.out.println(a);
+        }
         
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
+        // Way #: One
+//        int a = scan.nextInt();
+//        int b = scan.nextInt();
+//        int c = scan.nextInt();
+//
+//        System.out.println(a);
+//        System.out.println(b);
+//        System.out.println(c);
     }
 }
